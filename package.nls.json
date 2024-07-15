@@ -1,0 +1,4 @@
+{
+  "settings-stash.properties.global": "Key list of properties you want to evacuate to a stash.",
+  "settings-stash.stash.global": "Properties vault."
+}

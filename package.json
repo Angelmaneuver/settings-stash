@@ -1,0 +1,93 @@
+{
+  "name": "settings-stash",
+  "displayName": "Settings Stash",
+  "description": "",
+  "publisher": "Angelmaneuver",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Angelmaneuver/settings-stash/blob/main/README.md#settings-stash",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Angelmaneuver/settings-stash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Angelmaneuver/settings-stash/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/Angelmaneuver"
+  },
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "icon": "resource/AppIcon.png",
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "l10n": "./l10n",
+  "contributes": {
+    "commands": [
+      {
+        "command": "settings-stash.backup",
+        "title": "Settings Stash Backup"
+      },
+      {
+        "command": "settings-stash.restore",
+        "title": "Settings Stash Restore"
+      },
+      {
+        "command": "settings-stash.uninstall",
+        "title": "Settings Stash Uninstall"
+      }
+    ],
+    "configuration": {
+      "title": "Settings Stash",
+      "properties": {
+        "settings-stash.properties.global": {
+          "order": 0,
+          "type": "array",
+          "scope": "application",
+          "default": "",
+          "markdownDescription": "%settings-stash.properties.global%"
+        },
+        "settings-stash.stash.global": {
+          "order": 1,
+          "type": "object",
+          "scope": "application",
+          "default": {},
+          "markdownDescription": "%settings-stash.stash.global%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "lint": "eslint src --ext ts",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/lodash": "^4.17.6",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@vscode/l10n-dev": "^0.0.35",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^9.7.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@vscode/l10n": "^0.0.18",
+    "lodash": "^4.17.21"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "settings stash",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "typescript.tsc.autoDetect": "off",
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "mosapride.zenkaku",
+      "christian-kohler.path-intellisense",
+      "biomejs.biome",
+      "amodio.tsl-problem-matcher",
+      "cschleiden.vscode-github-actions"
+    ]
+  }
+}
