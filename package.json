@@ -1,7 +1,7 @@
 {
   "name": "settings-stash",
   "displayName": "Settings Stash",
-  "description": "",
+  "description": "Configuration value saving extension for extension developers.",
   "publisher": "Angelmaneuver",
   "version": "0.0.1",
   "homepage": "https://github.com/Angelmaneuver/settings-stash/blob/main/README.md#settings-stash",
