@@ -45,7 +45,7 @@
           "order": 0,
           "type": "array",
           "scope": "application",
-          "default": "",
+          "default": [],
           "markdownDescription": "%settings-stash.properties.global%"
         },
         "settings-stash.stash.global": {
