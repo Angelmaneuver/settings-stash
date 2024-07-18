@@ -1,5 +1,6 @@
 {
   "{0} properties evacuated to stash.": "{0}件のプロパティを退避しました。",
   "{0} properties restored from stash.": "{0}件のプロパティを保管庫から復元しました。",
+  "Stash properties erased.": "保管庫のプロパティを消去しました。",
   "The data for this extension has been erased.": "この拡張機能のデータを消去しました。"
 }

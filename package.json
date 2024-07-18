@@ -3,7 +3,7 @@
   "displayName": "Settings Stash",
   "description": "Configuration value saving extension for extension developers.",
   "publisher": "Angelmaneuver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/Angelmaneuver/settings-stash/blob/main/README.md#settings-stash",
   "repository": {
     "type": "git",
@@ -32,6 +32,10 @@
       {
         "command": "settings-stash.restore",
         "title": "Settings Stash Restore"
+      },
+      {
+        "command": "settings-stash.clear",
+        "title": "Settings Stash Clear"
       },
       {
         "command": "settings-stash.uninstall",

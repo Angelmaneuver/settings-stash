@@ -33,7 +33,7 @@ export class Settings {
     for (const property of this.properties) {
       const value = this.connection.get(property);
 
-      if (value) {
+      if (value !== undefined && value !== null) {
         properties[property] = value;
       }
     }
@@ -53,6 +53,10 @@ export class Settings {
     }
 
     return count;
+  }
+
+  public async clear(): Promise<void> {
+    return this.manage.remove(ID['stash.global']);
   }
 
   public async uninstall(): Promise<void> {

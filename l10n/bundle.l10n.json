@@ -1,5 +1,6 @@
 {
   "{0} properties evacuated to stash.": "{0} properties evacuated to stash.",
   "{0} properties restored from stash.": "{0} properties restored from stash.",
+  "Stash properties erased.": "Stash properties erased.",
   "The data for this extension has been erased.": "The data for this extension has been erased."
 }
